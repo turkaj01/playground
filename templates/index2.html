@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box1 {
+            height: 150px;
+            width: 150px;
+            margin: 20px;
+            display: flex;
+            background-color: {{color}};
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .header{
+            text-align: center;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome!</h1>
+    </div>
+    <div class="box">
+        {% for i in range(0, num) %}
+        <div class="box1"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
